@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import Entidades.EstatusProduccion;
+import com.lania.bambusalp.Entidades.EstatusProduccion;
 import com.lania.bambusalp.Servicios.EstatusProduccionServicio;
 					// http://localhost:8080/
 @RestController		//<<--- Esta clase es un controlador

@@ -50,4 +50,11 @@
                 <goal>spring-boot:run</goal>
             </goals>
         </action>
+    <action>
+            <actionName>CUSTOM-spring-boot</actionName>
+            <displayName>spring-boot</displayName>
+            <goals>
+                <goal>spring-boot:run</goal>
+            </goals>
+        </action>
 </actions>

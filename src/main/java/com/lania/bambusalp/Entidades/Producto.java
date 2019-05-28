@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entidades;
+package com.lania.bambusalp.Entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -16,19 +17,19 @@ import javax.persistence.Table;
  * @author Cinth
  */
 @Entity
-@Table (name="personas")
-public class Persona {
+@Table(name="productos")
+public class Producto {
     @Id
-    @GeneratedValue
-    @Column(name="id_persona")
-    private Long idPersona;
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @Column(name="id_producto")
+    private Long idProducto;
 
-    public Long getIdPersona() {
-        return idPersona;
+    public Long getIdProducto() {
+        return idProducto;
     }
 
-    public void setIdPersona(Long idPersona) {
-        this.idPersona = idPersona;
+    public void setIdProducto(Long idProducto) {
+        this.idProducto = idProducto;
     }
     
     

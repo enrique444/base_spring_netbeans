@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Repositorios;
+package com.lania.bambusalp.Repositorios;
 
-import Entidades.Insumo;
+import com.lania.bambusalp.Entidades.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @author Cinth
  */
 @Repository
-public interface InsumoRepositorio extends JpaRepository<Insumo, Long> {
+public interface PersonaRepositorio extends JpaRepository<Persona,Long>{
     
 }

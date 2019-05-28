@@ -3,11 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entidades;
+package com.lania.bambusalp.Entidades;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,7 +20,7 @@ import javax.persistence.Table;
 @Table(name="insumos")
 public class Insumo {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id_insumo")
     private Long idInsumo;
 

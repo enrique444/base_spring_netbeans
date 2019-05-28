@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entidades;
+package com.lania.bambusalp.Entidades;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -23,7 +24,7 @@ import javax.persistence.Table;
 @Table(name= "producciones")
 public class Produccion {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @Column(name="id_produccion")
     private Long  idProduccion;
     @Column(nullable= false, name="fecha_creacion")
@@ -39,13 +40,13 @@ public class Produccion {
     @Column(name="cantidad_suero")
     private BigDecimal cantidadSuero;
     @ManyToOne
-    @JoinColumn(nullable=false,name= "id_producto", referencedColumnName="id_producto")
+    @JoinColumn(name= "id_producto")
     private Producto producto;
     @ManyToOne
-    @JoinColumn(nullable=false, name="id_estatus_produccion", referencedColumnName="id_estatus_produccion")
+    @JoinColumn(nullable=false, name="id_estatus_produccion")
     private EstatusProduccion estatusProduccion;
     @ManyToOne
-    @JoinColumn(nullable=false, name="id_persona", referencedColumnName="id_persona")
+    @JoinColumn( name="id_persona")
     private Persona persona;
 
     public Long getIdProduccion() {

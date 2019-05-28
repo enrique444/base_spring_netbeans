@@ -13,8 +13,8 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import Entidades.Produccion;
-import Repositorios.ProduccionRepositorio;
+import com.lania.bambusalp.Entidades.Produccion;
+import com.lania.bambusalp.Repositorios.ProduccionRepositorio;
 @Service		
 public class ProduccionServicio {
 	@Autowired		
